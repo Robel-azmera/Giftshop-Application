@@ -1,0 +1,136 @@
+name: lezemed_mobile_app
+description: Lezemed is an online gift shop that is empowered by ZERGAW technology to connect Ethiopian diasporas with their family, friends and beloved ones through beautiful gifts.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+  # Custom flutter packages
+  # Display packages
+  flutter_svg: ^0.22.0 # Importing Flutter SVG for Icons
+  # flutter_statusbarcolor: ^0.2.3 # Importing Flutter status bar manipulator
+  after_layout: ^1.1.0 # Importing Flitter after layout
+  flutter_spinkit: ^5.0.0 # Importing Flutter for spinners
+  flutter_offline: ^2.0.0 # Importing Flutter if connection if available
+  flutter_icons: ^1.1.0 # Importing flutter icons
+  flutter_pagewise: ^2.0.1 # Importing flutter grid view lazy load
+  country_state_city_picker: ^1.2.8 # Importing country state pick
+  csc_picker: ^0.2.5
+  html:
+  carousel_slider: ^2.3.1
+  dropdown_formfield: ^0.1.3
+  badges: ^2.0.1
+  flutter_rating_bar: ^4.0.0
+  pull_to_refresh: ^2.0.0
+  shimmer: ^2.0.0
+  fluttertoast: ^8.0.7
+  intl: ^0.16.1
+  animations: ^2.0.1
+
+  # State management amd architecture
+  scoped_model: ^1.1.0
+  shared_preferences: ^2.0.6
+  connectivity: ^3.0.6 # Importing Flutter if connection if available
+  url_launcher: ^6.0.9 # Importing for the use of opening url
+  http: ^0.13.3
+  get_it: ^7.2.0
+  crypto: ^3.0.1
+  hive: ^2.0.4
+  hive_flutter: ^1.1.0
+  dio: ^4.0.0
+  flutter_config: ^2.0.0
+
+  # Payment
+  stripe_payment: ^1.1.4 # Importing Stripe payment
+  hive_generator: ^1.1.0
+  provider: ^5.0.0
+  refresh_widget: ^0.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.2 # Importing Launcher icon generator
+  build_runner: ^2.0.6
+
+# Flutter launcher icon
+flutter_icons:
+  android: "lezemed_launcher_icon"
+  ios: true,
+  image_path: "assets/images/LezemedIcon.png"
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Muli
+      fonts:
+        - asset: assets/fonts/muli/Muli.ttf
+        - asset: assets/fonts/muli/Muli-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/muli/Muli-Light.ttf
+          weight: 300
+    - family: Montserrat
+      fonts:
+        - asset: assets/fonts/montserrat/Montserrat-Regular.ttf
+        - asset: assets/fonts/montserrat/Montserrat-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/montserrat/Montserrat-Light.ttf
+          weight: 300
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
+analyzer:
+  strong-mode: true
+  language:
+    enableSuperMixins: true
